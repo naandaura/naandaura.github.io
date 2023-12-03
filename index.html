@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="N9p21FibBOf4KW9DMgvPOUtpHtMehfG_K0LreBEUnsI" />
-  <title>NaadAura</title>
+  <title>Naadaura Org</title>
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 />
+<meta name="google-site-verification" content="N9p21FibBOf4KW9DMgvPOUtpHtMehfG_K0LreBEUnsI" />
+
   <link rel="stylesheet" href="style.css">
   <!-- stylings  --><link
   rel="stylesheet"
@@ -30,15 +31,73 @@
   <meta name="author" content="Dr. Rishitosh Kumar">
   <meta property="og:title" content="NaadAura Organization">
   <meta property="og:description" content="NaadAura is a Society/Organization dedicated to Indian Classical Music. We are a world class centre for excellence in the teaching and propagation of Indian Classical and traditional music and performing arts. We are driven by a modern and contemporary outlook and social sensitivity and are committed to preserving and popularizing the diverse and ancient heritage of India        .">
-  <meta property="og:image" content="https://i.postimg.cc/63mqJtcP/Naad-Aura-Logo-01.png">
+  <meta property="og:image" content="https://i.postimg.cc/SRZDyWt3/collage-final-1.jpg">
   <!-- <meta property="og:url" content="http://euro-travel-example.com/index.htm"> -->
   <!-- meta tags ends  -->
 
 </head>
 
-<body>
+<body onload="showcontent()">
+
+  <div class="preloader-loader">
+    <div class="hexagon" aria-label="Animated hexagonal ripples">
+      <div class="hexagon__group">
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+      </div>
+      <div class="hexagon__group">
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+      </div>
+      <div class="hexagon__group">
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+      </div>
+      <div class="hexagon__group">
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+      </div>
+      <div class="hexagon__group">
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+      </div>
+      <div class="hexagon__group">
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+        <div class="hexagon__sector"></div>
+      </div>
+    </div>
+    <p aria-label="Loading">NAADAURA IS LOADING</p>
+  </div>
+
+
+  <div class="allcontent-afterloader" id="allcontent-afterloader">
   <div class="cursor-dot" data-cursor-dot></div>
   <div class="cursor-outline" data-cursor-outline></div>
+
   <nav class="nav">
     <i class="uil uil-bars navOpenBtn"></i>
     <a href="#" class="logo"><img src="./images/Naad Aura Logo-01.png" alt="" width="80">
@@ -328,7 +387,7 @@
       <li>We do not have any branch, franchise or collaboration anywhere else in the world and therefore, are not responsible for any action or communication carried out inappropriately in our name.</li>
   </ul>
 </h1>
-
+</div>
   <!-- script tags  -->
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
@@ -372,7 +431,22 @@
       },
     });
   </script>
+  <script>
+ function showcontent() {
+    // Hide the loader and show the content
+    var loaderElements = document.getElementsByClassName('preloader-loader');
+    if (loaderElements.length > 0) {
+        loaderElements[0].style.display = "none";
+    }
 
+    var contentElement = document.getElementById('allcontent-afterloader');
+    if (contentElement) {
+        contentElement.style.display = "block";
+    }
+}
+
+  
+  </script>
 
 
 <!-- script tags ends  -->
