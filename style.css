@@ -597,3 +597,8 @@ gap:20px;
   width:100vw;
   margin-top:40px;
 }
+
+  .responsive-image {
+            width: 100%; /* Set the width to 100% of the container */
+            height: auto; /* Maintain the aspect ratio */
+        }
